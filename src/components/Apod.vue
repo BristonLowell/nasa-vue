@@ -81,8 +81,9 @@ export default {
         }
         if (state.health <= 37 && state.health > 15) {
           document.getElementById('billy').innerText = 'HAHAHAHAHAHAHAHA!!!'
-          document.getElementById('billy-button').classList.add('bg-white')
-          document.getElementById('billy-button').classList.add('border-white')
+          document.getElementById('billy-button').classList.add('bg-dark')
+          document.getElementById('billy-button').classList.add('border-dark')
+          document.getElementById('billy-button').classList.add('text-dark')
         }
         if (state.health <= 15) {
           document.getElementById('billy').innerText = 'please no :('

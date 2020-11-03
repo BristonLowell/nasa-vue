@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid">
+  <div class="container-fluid text-white bg-dark">
     <div class="row justify-content-center text-center">
       <apod />
     </div>
