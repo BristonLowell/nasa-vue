@@ -31,7 +31,7 @@
         <img src="https://i.pinimg.com/originals/53/04/c5/5304c56282c143abc861cefc10daa4f7.jpg" class="img-fluid" alt="">
       </div>
       <div class="col-5 text-center">
-        <p id="billy" class="text-danger">
+        <p id="billy" class="">
           This is Billy. Billy slays.
         </p>
         <h1 class="p-1">
@@ -66,9 +66,11 @@ export default {
         }
         if (state.health <= 90 && state.health > 70) {
           document.getElementById('billy').innerText = "You're making me angry!"
+          document.getElementById('billy').classList.add('text-danger')
         }
         if (state.health <= 70 && state.health > 50) {
           document.getElementById('billy').innerText = "I'll disable your functions!"
+          document.getElementById('billy').classList.add('text-danger')
         }
         if (state.health <= 50 && state.health > 40) {
           document.getElementById('billy').innerText = 'I tried to warn you'
