@@ -1,4 +1,26 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <h1>Welcome to Your Vue.js App</h1>
+  <div class="container-fluid">
+    <div class="row justify-content-center text-center">
+      <apod />
+    </div>
+  </div>
 </template>
+
+<script>
+import { computed } from 'vue'
+import Apod from './components/Apod'
+import { AppState } from './AppState'
+export default {
+  name: 'App',
+  setup() {
+    return {
+      appstate: computed(() => AppState)
+    }
+  },
+  components: { Apod }
+}
+</script>
+
+<style lang="scss" scoped>
+
+</style>
